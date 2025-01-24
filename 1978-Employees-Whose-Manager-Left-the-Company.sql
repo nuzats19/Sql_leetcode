@@ -2,6 +2,6 @@
 Select employee_id
 From Employees 
 where manager_id NOT IN
-(Select employee_id
-From Employees) and salary<30000 
-order by employee_id;
+(Select employee_id     #subquires for manager who left the company
+From Employees) and salary<30000  #condition of salary
+order by employee_id;       #order in a ASC way
